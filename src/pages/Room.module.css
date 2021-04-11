@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.main {
+  max-width: 500px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.877);
+  padding: 30px 5px;
+  padding-top: 100px;
+  height: calc(100vh - 60px);
+  backdrop-filter: blur(1px);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.numberBtns {
+  padding: 5px 13px;
+  margin: 2px;
+  background-color: blueviolet;
+  border: none;
+  flex: 1;
+  color: white;
+  font-size: xx-large;
+  font-family: Righteous;
+}
+
+@media screen and (max-width: 340px) {
+  .numberBtns {
+    font-size: large;
+    padding: 4px 5px;
+  }
+}
+
+.numberBtns:hover {
+  background-color: rgb(101, 29, 168);
+}
+
+.numberBtns:disabled {
+  background-color: rgb(191, 126, 252);
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: royalblue;
+  width: 25%;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+.number {
+  font-size: xx-large;
+  padding: 20px 10px;
+  color: white;
+  font-family: Righteous;
+}
+
+.scoreCard {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  padding: 5px;
+  background-color: rgb(255, 112, 16);
+  margin: 2px;
+  border-radius: 3px;
+  flex: 1;
+}
+
+.scoreCard span:first-child {
+  font-size: smaller;
+}
+
+.scoreCard span:last-child {
+  font-size: larger;
+  color: white;
+  font-family: Righteous;
+  letter-spacing: 1px;
+}
+
+.roomCode {
+  padding: 2px 4px;
+  background-color: rgb(127, 235, 243);
+  border-radius: 2px;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.gameplay {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid rgb(71, 112, 248);
+  border-radius: 4px;
+}
+
+.winText {
+  font-family: Righteous;
+  color: royalblue;
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+
+.loseText {
+  font-family: Righteous;
+  color: rgb(255, 61, 61);
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+
+.tieText {
+  font-family: Righteous;
+  color: rgb(100, 100, 100);
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+
+.interval {
+  font-size: medium;
+  color: white;
+  background-color: blueviolet;
+  width: fit-content;
+  width: calc(100% - 10px);
+  margin: auto 5px;
+  padding: 2px 0px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.home {
+  background-color: blueviolet;
+  width: fit-content;
+  padding: 4px 10px;
+  margin: auto;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: large;
+}
+.home:hover {
+  background-color: rgb(106, 34, 173);
+}
